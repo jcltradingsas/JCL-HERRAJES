@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JCL HERRAJES | Ferretería y Herrajes al Mejor Precio</title>
+  <meta name="description" content="JCL HERRAJES: tu ferretería y casa de herrajes de confianza. Herramientas, cerraduras, pinturas, electricidad y más. Cotiza por WhatsApp." />
+  <meta name="theme-color" content="#0d0d0d" />
+
+  <meta property="og:title" content="JCL HERRAJES | Ferretería y Herrajes" />
+  <meta property="og:description" content="Herramientas, cerraduras, pinturas y herrajes de alta calidad. Cotiza hoy por WhatsApp." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="nav" id="nav">
+    <div class="nav-inner container">
+      <a href="#inicio" class="logo" data-reveal>
+        <span class="logo-mark">
+          <i data-lucide="hammer" class="logo-icon"></i>
+        </span>
+        <span class="logo-text">JCL <em>HERRAJES</em></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Menú principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#categorias">Categorías</a>
+        <a href="#productos">Productos</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#contacto" class="btn btn-wa nav-cta">
+          <i data-lucide="message-circle"></i> Cotizar
+        </a>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg" aria-hidden="true">
+      <span class="blob blob-1"></span>
+      <span class="blob blob-2"></span>
+      <span class="blob blob-3"></span>
+    </div>
+
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="hero-badge" id="heroBadge">
+          <span class="pulse-dot"></span>
+          Ferretería y herrajes de confianza
+        </span>
+
+        <h1 class="hero-title" id="heroTitle">
+          Todo para tu proyecto, <span class="grad">al mejor precio</span>
+        </h1>
+
+        <p class="hero-sub" id="heroSub">
+          Herramientas, cerraduras, pinturas, electricidad y herrajes de alta calidad.
+          Te asesoramos para que compres siempre lo correcto.
+        </p>
+
+        <div class="hero-actions" id="heroActions">
+          <a href="#contacto" class="btn btn-primary btn-lg">
+            Cotizar por WhatsApp <i data-lucide="arrow-right"></i>
+          </a>
+          <a href="#productos" class="btn btn-ghost btn-lg">Ver productos</a>
+        </div>
+
+        <div class="hero-stats" id="heroStats">
+          <div class="stat">
+            <span class="stat-num" data-count="12">0</span>
+            <span class="stat-label">Años de experiencia</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="8000" data-suffix="+">0</span>
+            <span class="stat-label">Clientes atendidos</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="5000" data-suffix="+">0</span>
+            <span class="stat-label">Productos en stock</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual" id="heroVisual">
+        <div class="hero-card card-main">
+          <div class="card-top">
+            <span class="chip chip-green"><span class="chip-dot"></span> Abierto ahora</span>
+            <span class="chip chip-ghost">Hoy 08:00 – 18:00</span>
+          </div>
+          <div class="card-product">
+            <span class="product-icon" data-lucide="wrench"></span>
+            <span class="product-icon" data-lucide="hammer"></span>
+            <span class="product-icon" data-lucide="lock"></span>
+            <span class="product-icon" data-lucide="zap"></span>
+          </div>
+          <p class="card-title">Stock garantizado</p>
+          <p class="card-sub">Mas de 5.000 productos listos para ti</p>
+          <div class="card-progress"><span></span></div>
+        </div>
+
+        <div class="hero-card card-float card-left">
+          <i data-lucide="truck"></i>
+          <div>
+            <strong>Envío rápido</strong>
+            <span>Entrega el mismo día</span>
+          </div>
+        </div>
+
+        <div class="hero-card card-float card-right">
+          <i data-lucide="shield-check"></i>
+          <div>
+            <strong>Calidad garantizada</strong>
+            <span>Marcas reconocidas</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Herramientas</span><span>Cerraduras</span><span>Herrajes</span><span>Pinturas</span>
+        <span>Electricidad</span><span>Plomería</span><span>Tornillería</span><span>Seguridad</span>
+        <span>Herramientas</span><span>Cerraduras</span><span>Herrajes</span><span>Pinturas</span>
+        <span>Electricidad</span><span>Plomería</span><span>Tornillería</span><span>Seguridad</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CATEGORÍAS ===== -->
+  <section class="section" id="categorias">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">Nuestras áreas</span>
+        <h2>Todo lo que necesitas, <span class="grad">en un solo lugar</span></h2>
+        <p>Dividimos nuestra tienda en especialidades para que encuentres rápido y seguro.</p>
+      </div>
+
+      <div class="cats-grid">
+        <a href="#contacto" class="cat-card" data-reveal>
+          <span class="cat-icon"><i data-lucide="wrench"></i></span>
+          <h3>Herramientas</h3>
+          <p>Manuales, eléctricas y de medición.</p>
+          <span class="cat-link">Cotizar <i data-lucide="arrow-up-right"></i></span>
+        </a>
+        <a href="#contacto" class="cat-card" data-reveal>
+          <span class="cat-icon"><i data-lucide="lock"></i></span>
+          <h3>Cerraduras y Seguridad</h3>
+          <p>Chapa, sobreponer, de embutir y candados.</p>
+          <span class="cat-link">Cotizar <i data-lucide="arrow-up-right"></i></span>
+        </a>
+        <a href="#contacto" class="cat-card" data-reveal>
+          <span class="cat-icon"><i data-lucide="door-open"></i></span>
+          <h3>Herrajes</h3>
+          <p>Bisagras, correderas, manijas y pasadores.</p>
+          <span class="cat-link">Cotizar <i data-lucide="arrow-up-right"></i></span>
+        </a>
+        <a href="#contacto" class="cat-card" data-reveal>
+          <span class="cat-icon"><i data-lucide="paint-bucket"></i></span>
+          <h3>Pinturas</h3>
+          <p>Látex, esmalte, anticorrosiva y accesorios.</p>
+          <span class="cat-link">Cotizar <i data-lucide="arrow-up-right"></i></span>
+        </a>
+        <a href="#contacto" class="cat-card" data-reveal>
+          <span class="cat-icon"><i data-lucide="zap"></i></span>
+          <h3>Electricidad</h3>
+          <p>Cables, interruptores, tomacorrientes y focos.</p>
+          <span class="cat-link">Cotizar <i data-lucide="arrow-up-right"></i></span>
+        </a>
+        <a href="#contacto" class="cat-card" data-reveal>
+          <span class="cat-icon"><i data-lucide="droplets"></i></span>
+          <h3>Plomería</h3>
+          <p>Tuberías, llaves, adaptadores y selladores.</p>
+          <span class="cat-link">Cotizar <i data-lucide="arrow-up-right"></i></span>
+        </a>
+        <a href="#contacto" class="cat-card" data-reveal>
+          <span class="cat-icon"><i data-lucide="nut"></i></span>
+          <h3>Tornillería</h3>
+          <p>Tornillos, pernos, tuercas y anclajes.</p>
+          <span class="cat-link">Cotizar <i data-lucide="arrow-up-right"></i></span>
+        </a>
+        <a href="#contacto" class="cat-card" data-reveal>
+          <span class="cat-icon"><i data-lucide="flower-2"></i></span>
+          <h3>Jardinería y Hogar</h3>
+          <p>Mangueras, pegamentos y artículos de limpieza.</p>
+          <span class="cat-link">Cotizar <i data-lucide="arrow-up-right"></i></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCTOS ===== -->
+  <section class="section section-dark" id="productos">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">Lo más pedido</span>
+        <h2>Productos <span class="grad">destacados</span></h2>
+        <p>Los favoritos de nuestros clientes. Escríbenos y te cotizamos al instante.</p>
+      </div>
+
+      <div class="products-grid">
+        <article class="product-card" data-reveal>
+          <div class="product-media"><i data-lucide="lock"></i></div>
+          <div class="product-body">
+            <span class="tag">Seguridad</span>
+            <h3>Cerraduras de seguridad</h3>
+            <p>Alta resistencia, anti-ganzúa y llaves duplicables.</p>
+            <div class="product-foot">
+              <span class="price">Desde $12</span>
+              <a href="#contacto" class="btn btn-wa btn-sm">Cotizar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-reveal>
+          <div class="product-media"><i data-lucide="drill"></i></div>
+          <div class="product-body">
+            <span class="tag">Herramientas</span>
+            <h3>Taladros y rotomartillos</h3>
+            <p>Económicos y profesionales, con garantía.</p>
+            <div class="product-foot">
+              <span class="price">Desde $35</span>
+              <a href="#contacto" class="btn btn-wa btn-sm">Cotizar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-reveal>
+          <div class="product-media"><i data-lucide="door-open"></i></div>
+          <div class="product-body">
+            <span class="tag">Herrajes</span>
+            <h3>Bisagras y correderas</h3>
+            <p>Para muebles, puertas y ventanas de aluminio.</p>
+            <div class="product-foot">
+              <span class="price">Desde $1.50</span>
+              <a href="#contacto" class="btn btn-wa btn-sm">Cotizar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-reveal>
+          <div class="product-media"><i data-lucide="paint-bucket"></i></div>
+          <div class="product-body">
+            <span class="tag">Pintura</span>
+            <h3>Pinturas y esmaltes</h3>
+            <p>Gran variedad de colores y presentaciones.</p>
+            <div class="product-foot">
+              <span class="price">Desde $9</span>
+              <a href="#contacto" class="btn btn-wa btn-sm">Cotizar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-reveal>
+          <div class="product-media"><i data-lucide="package"></i></div>
+          <div class="product-body">
+            <span class="tag">Tornillería</span>
+            <h3>Kits de tornillos</h3>
+            <p>Mezcla variada para madera, metal y drywall.</p>
+            <div class="product-foot">
+              <span class="price">Desde $3</span>
+              <a href="#contacto" class="btn btn-wa btn-sm">Cotizar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-reveal>
+          <div class="product-media"><i data-lucide="droplets"></i></div>
+          <div class="product-body">
+            <span class="tag">Plomería</span>
+            <h3>Tuberías y llaves</h3>
+            <p>PVC, bronce y accesorios para toda instalación.</p>
+            <div class="product-foot">
+              <span class="price">Desde $2</span>
+              <a href="#contacto" class="btn btn-wa btn-sm">Cotizar</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALERÍA / HERRajes reales ===== -->
+  <section class="section section-dark" id="galeria">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">Nuestro inventario real</span>
+        <h2>Herrajes que <span class="grad">trabajamos</span></h2>
+        <p>Fotos reales de nuestros productos. ¿Te interesa alguno? Cotiza por WhatsApp y lo tenemos para ti.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <figure class="gallery-card" data-reveal>
+          <img src="img/Bisagra%20Simple.jpg" alt="Bisagra simple para puertas y muebles" loading="lazy" />
+          <figcaption>
+            <h3>Bisagra simple</h3>
+            <p>Ideal para puertas de madera y muebles ligeros. Variedad de medidas y acabados.</p>
+            <a href="#contacto" class="btn btn-wa btn-sm">Cotizar por WhatsApp</a>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-card" data-reveal>
+          <img src="img/Bisagra%20tipo%20codo.jpg" alt="Bisagra tipo codo" loading="lazy" />
+          <figcaption>
+            <h3>Bisagra tipo codo</h3>
+            <p>Para puertas con marco reforzado y mayor peso. Resistente y duradera.</p>
+            <a href="#contacto" class="btn btn-wa btn-sm">Cotizar por WhatsApp</a>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== POR QUÉ NOSOTROS ===== -->
+  <section class="section" id="nosotros">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">Por qué elegirnos</span>
+        <h2>Más que una ferretería, <span class="grad">tu aliado</span></h2>
+        <p>Nos importa que tu proyecto salga bien. Por eso te asesoramos en cada compra.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card" data-reveal>
+          <span class="feature-icon"><i data-lucide="badge-check"></i></span>
+          <h3>Asesoría experta</h3>
+          <p>Te ayudamos a elegir la medida, marca o material correcto para tu trabajo.</p>
+        </div>
+        <div class="feature-card" data-reveal>
+          <span class="feature-icon"><i data-lucide="tag"></i></span>
+          <h3>Precios justos</h3>
+          <p>Calidad sin pagar de más. Ofertas y precios al por mayor.</p>
+        </div>
+        <div class="feature-card" data-reveal>
+          <span class="feature-icon"><i data-lucide="truck"></i></span>
+          <h3>Entrega rápida</h3>
+          <p>Pedidos el mismo día, con despacho a domicilio si lo necesitas.</p>
+        </div>
+        <div class="feature-card" data-reveal>
+          <span class="feature-icon"><i data-lucide="refresh-cw"></i></span>
+          <h3>Stock permanente</h3>
+          <p>Los productos más usados siempre disponibles para ti.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA WHATSAPP ===== -->
+  <section class="cta" id="contacto">
+    <div class="container">
+      <div class="cta-box" data-reveal>
+        <div class="cta-glow" aria-hidden="true"></div>
+        <span class="cta-icon"><i data-lucide="message-circle"></i></span>
+        <h2>¿Necesitas cotizar o no encuentras lo que buscas?</h2>
+        <p>Escríbenos por WhatsApp y te atendemos al instante. Respuesta rápida, precio claro y asesoría gratis.</p>
+        <a href="https://wa.me/593939289952?text=Hola%20JCL%20HERRAJES%2C%20quiero%20una%20cotizaci%C3%B3n" target="_blank" rel="noopener" class="btn btn-wa btn-xl">
+          <i data-lucide="message-circle"></i> Escríbenos al 09 3928 9952
+        </a>
+        <span class="cta-note">Disponibles de lunes a sábado, 08:00 – 18:00</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIOS ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">Clientes felices</span>
+        <h2>Lo que dicen <span class="grad">nuestros clientes</span></h2>
+      </div>
+
+      <div class="testi-grid">
+        <figure class="testi-card" data-reveal>
+          <div class="stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div>
+          <blockquote>"Me asesoraron para elegir la cerradura correcta para mi local. Precio justo y atención excelente."</blockquote>
+          <figcaption><strong>Carlos M.</strong><span>Dueño de local comercial</span></figcaption>
+        </figure>
+        <figure class="testi-card" data-reveal>
+          <div class="stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div>
+          <blockquote>"Pedí por WhatsApp y me entregaron el mismo día. Todo mi proyecto de pintura se hizo con sus productos."</blockquote>
+          <figcaption><strong>María F.</strong><span>Cliente frecuente</span></figcaption>
+        </figure>
+        <figure class="testi-card" data-reveal>
+          <div class="stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div>
+          <blockquote>"El mejor stock de herrajes del barrio. Bisagras, correderas y manijas de buena marca."</blockquote>
+          <figcaption><strong>Luis R.</strong><span>Maestro carpintero</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#inicio" class="logo">
+          <span class="logo-mark"><i data-lucide="hammer" class="logo-icon"></i></span>
+          <span class="logo-text">JCL <em>HERRAJES</em></span>
+        </a>
+        <p>Tu ferretería y casa de herrajes de confianza. Calidad, buen precio y atención que te acompaña.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/jcl_herrajes/" target="_blank" rel="noopener" aria-label="Instagram de JCL HERRAJES" title="Síguenos en Instagram"><i data-lucide="instagram"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=61592742215809" target="_blank" rel="noopener" aria-label="Facebook de JCL HERRAJES" title="Síguenos en Facebook"><i data-lucide="facebook"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Enlaces</h4>
+        <a href="#inicio">Inicio</a>
+        <a href="#categorias">Categorías</a>
+        <a href="#productos">Productos</a>
+        <a href="#nosotros">Nosotros</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <a href="https://wa.me/593939289952" target="_blank" rel="noopener"><i data-lucide="phone"></i> 09 3928 9952</a>
+        <a href="#"><i data-lucide="map-pin"></i> Ciudad, Ecuador</a>
+        <a href="#"><i data-lucide="clock"></i> Lun – Sáb: 08:00 – 18:00</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 JCL HERRAJES. Todos los derechos reservados.</p>
+      <p>Hecho con <i data-lucide="heart" class="heart"></i> para tus proyectos.</p>
+    </div>
+  </footer>
+
+  <!-- Botón flotante WhatsApp -->
+  <a href="https://wa.me/593939289952?text=Hola%20JCL%20HERRAJES%2C%20tengo%20una%20consulta" target="_blank" rel="noopener" class="wa-float" aria-label="Chatear por WhatsApp" id="waFloat">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.497.1-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <span class="wa-float-ping"></span>
+  </a>
+
+  <!-- Librerías -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/motion@11/dist/motion.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
