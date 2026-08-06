@@ -112,6 +112,79 @@
     runStats();
   }
 
+  /* ---------- Carrusel de categorías ---------- */
+  var catsTrack = document.getElementById("catsTrack");
+  var catsPrev = document.getElementById("catsPrev");
+  var catsNext = document.getElementById("catsNext");
+  var catsDots = document.getElementById("catsDots");
+
+  if (catsTrack && catsPrev && catsNext) {
+    var catCards = catsTrack.querySelectorAll(".cat-card");
+    var cardGap = 18;
+
+    function cardStep() {
+      var first = catCards[0];
+      return first ? first.offsetWidth + cardGap : 0;
+    }
+
+    catsPrev.addEventListener("click", function () {
+      catsTrack.scrollBy({ left: -cardStep(), behavior: "smooth" });
+    });
+    catsNext.addEventListener("click", function () {
+      catsTrack.scrollBy({ left: cardStep(), behavior: "smooth" });
+    });
+
+    if (catsDots) {
+      catCards.forEach(function (card, i) {
+        var dot = document.createElement("button");
+        dot.className = "dot" + (i === 0 ? " active" : "");
+        dot.setAttribute("aria-label", "Ver categoría " + (i + 1));
+        dot.addEventListener("click", function () {
+          catsTrack.scrollTo({ left: i * cardStep(), behavior: "smooth" });
+        });
+        catsDots.appendChild(dot);
+      });
+    }
+
+    var dots = catsDots ? catsDots.querySelectorAll(".dot") : [];
+
+    function updateDots() {
+      if (!dots.length || !cardStep()) return;
+      var idx = Math.round(catsTrack.scrollLeft / cardStep());
+      idx = Math.min(Math.max(idx, 0), dots.length - 1);
+      dots.forEach(function (d, i) { d.classList.toggle("active", i === idx); });
+    }
+
+    var scrollTimer = null;
+    catsTrack.addEventListener("scroll", function () {
+      if (scrollTimer) clearTimeout(scrollTimer);
+      scrollTimer = setTimeout(updateDots, 80);
+    }, { passive: true });
+    window.addEventListener("resize", updateDots);
+
+    var autoTimer = null;
+    function startAuto() {
+      if (autoTimer) clearInterval(autoTimer);
+      autoTimer = setInterval(function () {
+        var maxScroll = catsTrack.scrollWidth - catsTrack.clientWidth;
+        if (catsTrack.scrollLeft >= maxScroll - 10) {
+          catsTrack.scrollTo({ left: 0, behavior: "smooth" });
+        } else {
+          catsTrack.scrollBy({ left: cardStep(), behavior: "smooth" });
+        }
+      }, 3500);
+    }
+    function stopAuto() {
+      if (autoTimer) clearInterval(autoTimer);
+    }
+
+    startAuto();
+    catsTrack.addEventListener("mouseenter", stopAuto);
+    catsTrack.addEventListener("mouseleave", startAuto);
+    catsTrack.addEventListener("touchstart", stopAuto, { passive: true });
+    catsTrack.addEventListener("touchend", startAuto);
+  }
+
   /* ---------- Animaciones con Motion (Framer Motion) ---------- */
   function heroEntrance() {
     var badge = document.getElementById("heroBadge");
